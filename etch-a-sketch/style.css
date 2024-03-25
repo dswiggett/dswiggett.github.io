@@ -1,0 +1,110 @@
+/* Foundation */
+body {
+    font-family: "Anta", sans-serif;
+}
+
+.title {
+    font-size: 65px;
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin: 0 10% 0 0;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Left Hand Buttons */
+.functionality {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+span p {
+    margin: 0px;
+    text-align: center;
+    font-size: 17px;
+}
+
+input[type="color" i] { 
+    height: 80px;
+    width: 80px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    left: 25px;
+}
+
+input[type="color" i]::-webkit-color-swatch {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+input:hover { 
+    cursor: pointer;
+}
+
+.background-picker:focus {
+    color: white;
+}
+
+input[type='range'] {
+    -webkit-appearance: none;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    width: 15px;
+    -webkit-appearance: none;
+    height: 12px;
+    border-radius: 4px;
+    background: black;
+}
+
+button {
+    background: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-family: "Anta", sans-serif;
+    font-size: 16px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: rgb(235, 235, 235);
+}
+
+/* Game Box */
+.game-box {
+    margin-right: -15%;
+    display: inline-grid;
+    grid-template-columns: repeat(16, 2fr);
+    grid-template-rows: repeat(16, 2fr);
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 3px;
+    height: 450px;
+    width: 450px;
+}
+
+.square {
+    background-color: white;
+}
+
+/* Credits */
+.credit {
+    padding-top: 12%;
+}
+
+a {
+    color: black;
+}
